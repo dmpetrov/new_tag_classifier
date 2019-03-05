@@ -1,2 +1,4 @@
 ['remote "myremote"']
 url = s3://dvc-exp/dmitry/new_tag_classifier
+[core]
+remote = myremote
