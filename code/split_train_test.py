@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import conf
+import sys
 
 INPUT = conf.source_tsv
 
@@ -28,6 +29,7 @@ test_ratio = float(sys.argv[1])
 seed = int(sys.argv[2])
 train = conf.train_tsv
 test = conf.test_tsv
+
 
 df = pd.read_csv(
     INPUT,
